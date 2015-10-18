@@ -40,9 +40,13 @@ public abstract class Vehicle implements Driveable {
     }
 
     public void brake() {
-        speed = 0;
+
+        while (speed!=0) {
+            speed = speed - (speed/2);
+            if (speed == 1) speed = 0;
+            System.out.println("speed: "+ speed + " km/h");
+        }
         System.out.println("stop");
-        System.out.println("speed: "+ speed + " km/h");
     }
 
 }

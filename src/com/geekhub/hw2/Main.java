@@ -16,9 +16,9 @@ import com.geekhub.hw2.vehicle.Vehicle;
 public class Main {
 
     public static void main(String[] args) {
-        Boat boat = new Boat(new GasTank(), new GasolineEngine(), new BoatGear());
-        Car car = new Car(new GasTank(), new GasolineEngine(), new CarGear());
-        SolarCar solarCar = new SolarCar(new SolarBattery(), new SolarEngine(), new CarGear());
+        Boat boat = new Boat(new GasTank(50), new GasolineEngine(), new BoatGear());
+        Car car = new Car(new GasTank(50), new GasolineEngine(), new CarGear());
+        SolarCar solarCar = new SolarCar(50);
         Vehicle[] vehicles = {
                 boat,
                 car,
